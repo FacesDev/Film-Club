@@ -1,0 +1,526 @@
+* {
+  box-sizing: border-box;
+  font-family: 'PT Sans', sans-serif;
+}
+/*_________________HEADER______________*/
+.header {
+  width: 100%;
+  display: flex;
+}
+.film {
+  background-size: cover;
+  height: 120px;
+  width: 100px;
+  padding:10px;
+  background-color: #F2115E;
+  float: left;
+}
+.nav {
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}
+.navhome {
+  background-color: #1AA5BD;
+}
+.navcal {
+  background-color: #1EB7D1;
+}
+.navjoin {
+  background-color: #24D5E5;
+}
+.nav div {
+  padding: 10px 0px;
+}
+.navstyle {
+  text-decoration: none;
+  color: white;
+}
+.navhome:hover {
+  background-color: #65C5D7;
+}
+.navcal:hover {
+  background-color: #65C5D7;
+}
+.navjoin:hover {
+  background-color: #65C5D7;
+}
+/*_______________END HEADER_____________*/
+/*_______________HOME PAGE______________*/
+.mainhome {
+  padding: 20px 20px;
+}
+.mainhome h2 {
+  color:white;
+  padding-left: 20px;
+  background-color: #0C1A41;
+}
+.mainhome > p {
+  line-height: 1.7;
+}
+.upnext {
+  background-color: #0c1a41;
+  padding-top:10px;
+  width: 100%;
+  padding-bottom: 40px;
+}
+.upnext h1 {
+  color: white;
+  margin-left: 30px;
+}
+.color {
+  color: #00B7D3;
+  text-decoration: none;
+}
+.rashomon {
+  background-color: #E2E2E2;
+  margin: 20px 20px;
+  padding: 20px 20px;
+  position: relative;
+  display: flex;
+}
+.rashwrap {
+  float: left;
+  flex: 1 0 45%;
+}
+.rashimg {
+  width: 100%;
+}
+.rashcont {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+  width:100%;
+  padding-right:0px;
+}
+.rashcont > h2,.border {
+  margin:5px;
+  font-weight: normal;
+}
+.border {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  font-size: 14px;
+}
+ul {
+  list-style-type: circle;
+  margin: 0px;
+  line-height: 1.5;
+  padding-left: 20px;
+}
+.bottomfilm {
+  background-color: #E1E1E1;
+  margin: 20px 20px;
+  display:flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  text-align:center;
+}
+.films {
+  flex: 1 1 43%;
+  margin-top: 15px;
+  padding: 10px;
+}
+.bicycle, .nosferatu, .metropolis, .edison {
+  height: 100%;
+  width: 100%;
+}
+.films h3{
+  font-size: 14px;
+  font-weight: normal;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 1.7;
+}
+/*_____TABLET______*/
+@media screen and ( min-width:480px ) {
+  .nav {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #81DFE7;
+  }
+  .nav div {
+    flex: 0 1 20%;
+    line-height:100px;
+  }
+  .maindiv {
+    display:flex;
+  }
+  .topmain {
+    flex: 0 1 33%;
+    margin: 0px 15px;
+  }
+  .rashwrap {
+    width: 100%;
+    height:100%;
+  }
+
+  .films {
+    flex: 0 1 25%;
+  }
+  .bottomfilm {
+  }
+  .bicycle, .nosferatu, .metropolis, .edison {
+    height: 100%;
+    width: 100%;
+  }
+  footer {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+  }
+  .foothm, .footcal, .footjoin {
+    flex: 0 1 15%;
+    padding-top:30px;
+  }
+  .cr {
+    width: 60%;
+  }
+}
+/*_____DESKTOP______*/
+@media screen and ( min-width:769px ) {
+
+  .nav div {
+    flex: 0 1 15%;
+  }
+  .uptop {
+    display: flex;
+  }
+  .rashomon {
+    flex:0 1 48%;
+    height: 60vh;
+    display:flex;
+  }
+  .bottomfilm {
+    flex: 0 1 48%;
+  }
+  .films {
+    flex: 0 1 48%;
+  }
+  .upnext h1 {
+    margin: 0px 20px;
+  }
+  .foothm, .footcal, .footjoin {
+    flex: 0 1 10%;
+    padding-top:30px;
+  }
+  .cr {
+    width: 70%;
+  }
+  .rashcont {
+    flex:1 1 60%;
+  }
+  .rashimg {
+    flex: 1 1 40%;
+  }
+}
+/*_______________Join_________________*/
+.join {
+  width: 100%;
+  padding: 20px;
+}
+.face {
+  border-radius: 50%;
+  width: calc(100% - 20px);
+  margin: 30px 0px;
+}
+.top {
+  display: inline-block;
+
+}
+.forms > input {
+  width: 100%;
+}
+#fileToUpload {
+  width:100%;
+}
+.genres {
+  display: flex;
+  flex-direction: column;
+  line-height: 2;
+}
+.join h1 {
+  font-weight: normal;
+  margin-top: 0px;
+}
+#confpass, #pass, #email, #name {
+  font-size: 20px;
+  margin-bottom:10px;
+}
+#textarea {
+  width: 100%;
+}
+.addinp {
+  margin-top: 20px;
+}
+
+.file-btn{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.file-btn > input[type='file']{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  margin: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.upload-pic{
+  border: 3px solid #F2115D;
+  padding: 20px 10px;
+  color: #fff;
+  background: #F2115D;
+}
+
+.upload-pic:hover{
+  background: #ecacc2;
+}
+.submit-btn {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+.submit-btn > input[type='submit']{
+  border:none;
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  margin-top: 10px;
+  opacity: 0;
+  cursor: pointer;
+}
+.submit-ghost {
+  border: 3px solid #F2115D;
+  padding: 20px 20px;
+  color: #fff;
+  background: #F2115D;
+}
+.submit-ghost:hover{
+  background: #ecacc2;
+}
+/*------Tablet---------*/
+@media screen and ( min-width:480px ) {
+  .nav {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #81DFE7;
+  }
+  .nav div {
+    flex: 0 1 20%;
+    line-height:100px;
+  }
+  footer {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+  }
+  .foothm, .footcal, .footjoin {
+    flex: 0 1 15%;
+    padding-top:30px;
+  }
+  .cr {
+    width: 60%;
+  }
+  .joinform {
+    margin-left: 20px;
+    flex: 1 1 50%;
+  }
+  .face {
+    flex: 0 1 50%;
+    height: 30%;
+    width: 30%;
+  }
+  .imagecont {
+    display: flex;
+    width: 100%;
+  }
+  .genres {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    }
+  .genres div {
+    flex: 1 1 50%;
+  }
+  .forms:nth-child(3) {
+    margin-top: 40px;
+  }
+}
+/*_______DESKTOP___________*/
+@media screen and ( min-width:769px ) {
+  .nav div {
+  flex: 0 1 15%;
+  }
+  .foothm, .footcal, .footjoin {
+  flex: 0 1 10%;
+  padding-top:30px;
+  }
+  .cr {
+  width: 70%;
+  }
+  .face {
+    flex: 0 1 30%;
+  }
+  .joinform {
+    display: inline-block;
+  }
+  .forms:nth-child(3) {
+    margin-top: 0px;
+  }
+  .addinp {
+    padding-right: 30%;
+  }
+  .genres div {
+    flex:0 1 30%;
+  }
+  .join h3 {
+    font-weight: normal;
+
+  }
+  .forms {
+    padding: 10px;
+    display:inline-block;
+    width:45%;
+  }
+  .forms input {
+    width:100%;
+  }
+}
+/*___________Calendar_________________*/
+.calmain h1 {
+  font-weight: normal;
+  margin-left:20px;
+}
+.backcal {
+  background-color:#0C1A41;
+}
+.backcal h3 {
+  color:white;
+  padding: 15px 15px;
+  font-weight: 400;
+  font-size: 25px;
+}
+.calendar {
+  display:flex;
+  flex-wrap: wrap;
+}
+.day {
+  border: 1px solid #0C1A41;
+  background-color:white;
+  flex: 0 1 14.28%;
+  height: 50px;
+  width: 100%;
+  position: relative;
+  display:flex;
+}
+.number {
+  display:flex;
+  color: white;
+  background-color: #0C1A41;
+  position: absolute;
+  width: 3vh;
+  height: 3vh;
+  font-size: 10px;
+  justify-content: center;
+  font-weight: bold;
+  align-items: center;
+}
+.red {
+  background-color: #F2115E;
+}
+/*--------Tablet---------*/
+@media screen and ( min-width:480px ) {
+  .nav {
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #81DFE7;
+  }
+  .nav div {
+    flex: 0 1 20%;
+    line-height:100px;
+  }
+  footer {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+  }
+  .foothm, .footcal, .footjoin {
+    flex: 0 1 15%;
+    padding-top:30px;
+  }
+  .cr {
+    width: 60%;
+  }
+  .day {
+    height: 9vh;
+    width: 14.28%;
+  }
+  .number {
+    height:3vh;
+    width: 3vh;
+  }
+}
+/*_______DESKTOP___________*/
+@media screen and ( min-width:769px ) {
+  .nav div {
+    flex: 0 1 15%;
+  }
+  .foothm, .footcal, .footjoin {
+    flex: 0 1 10%;
+    padding-top:30px;
+  }
+  .cr {
+    width: 70%;
+  }
+  .day {
+    height: 12vh;
+    width: 14.28%;
+  }
+
+  .number {
+    height:3vh;
+    width: 3vh;
+  }
+}
+/*_______________FOOTER_______________*/
+footer {
+  width:100%;
+  text-align: center;
+  color: white;
+}
+.foothm {
+  background-color: #1AA5BD;
+}
+.footcal {
+  background-color: #1EB7D1;
+}
+.footjoin {
+  background-color: #24D5E5;
+}
+footer div {
+  padding: 10px 0px;
+}
+.cr {
+  background-color: #81DFE7;
+  padding: 30px 0px;
+}
+.footjoin:hover {
+  background-color: #65C5D7;
+}
+.footcal:hover {
+  background-color: #65C5D7;
+}
+.foothm:hover {
+  background-color: #65C5D7;
+}
+
+/*___________END FOOTER_________________*/

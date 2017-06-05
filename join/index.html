@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Film Club - Join</title>
+  </head>
+  <body>
+    <div class="header">
+      <img class= "film" src="../images/filmclub.png" alt="pink film">
+      <div class="nav">
+        <div class="navhome"><a href="../index.html" class="navstyle" style="height:50px; width:50px">Home</a></div>
+        <div class="navcal"><a href="../calendar/index.html" class="navstyle">Calendar</a></div>
+        <div class="navjoin"><a href="index.html" class="navstyle">Join</a></div>
+      </div>
+    </div>
+    <main class="join">
+      <h1>Join Film Club</h1>
+      <form class="top">
+        <div class="file-btn upload-pic">
+            <span>Upload a Picture</span>
+            <input type="file" name="fileToUpload" id="fileToUpload">
+          </div>
+      </form>
+      <div class="imagecont">
+        <img class="face" src="../images/profile-placeholder.png" alt="face" />
+        <form class="joinform">
+          <div class="forms">
+            <label for="name">Name</label><br />
+            <input type="text" id="name">
+          </div>
+          <div class="forms">
+            <label for="email">Email Address</label><br />
+            <input type="email" id="email">
+          </div>
+
+          <div class="forms">
+            <label for="pass">Password</label><br />
+            <input type="password" id="pass">
+          </div>
+          <div class="forms">
+            <label for="confpass">Confirm Password</label><br />
+            <input type="password" id="confpass">
+          </div>
+        </div>
+
+        <h3>Which genres are you interested in?</h3>
+        <div class="genres">
+          <div>
+            <input type="checkbox" name="checkboxes" id="action" value="action">
+            <label for="action">action</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="adventure" value=" adventure">
+            <label for="adventure">adventure</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="comedy" value="comedy">
+            <label for="comedy">comedy</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="drama" value="drama">
+            <label for="drama">drama</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="fantasy" value="fantasy">
+            <label for="fantasy">fantasy</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="historical" value="historical">
+            <label for="historical">historical</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="horor" value="horor">
+            <label for="horor">horor</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="mystery" value="mystery">
+            <label for="mystery">mystery</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="romance" value="romance">
+            <label for="romance">romance</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="sciencefiction" value="science fiction">
+            <label for="sciencefiction">science fiction</label>
+          </div>
+          <div>
+            <input type="checkbox" name="checkboxes" id="western" value="western">
+            <label for="western">western</label>
+          </div>
+        </div>
+        <div class="addinp">
+          <label for="textarea">Additional input</label>
+          <textarea rows="4" id="textarea">Your text goes here!</textarea>
+          <div class="submit-btn submit-ghost">
+            <span>Submit</span>
+            <input type="submit" value="Join Film Club" name="submit"></input>
+          </div>
+        </div>
+      </form>
+    </main>
+    <footer>
+        <div class="foothm"><a href="../index.html" class="navstyle">Home</a></div>
+        <div class="footcal"><a href="../calendar/index.html" class="navstyle">Calendar</a></div>
+        <div class="footjoin"><a href="index.html" class="navstyle">Join</a></div>
+        <div class="cr">© 2017 Film Club</div>
+    </footer>
+  </body>
+</html>
